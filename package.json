@@ -1,0 +1,23 @@
+{
+  "name": "openidconnect-client",
+  "version": "1.2.0",
+  "description": "A test client for OpenID Connect providers",
+  "main": "index.js",
+  "author": "Sascha Zarhuber",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "debug": "^3.1.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.1",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.0",
+    "openid-client": "^1.19.3",
+    "passport": "^0.4.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

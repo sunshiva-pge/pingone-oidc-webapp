@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>OpenID Connect Test</title>
+  </head>
+  <body>
+    <h1>OpenID Connect Test</h1>
+    <h2>Successfully obtained user profile for user ID: {{ sub }}.</h2>
+    <p>
+      <em>Default values according to <a href="http://openid.net/specs/openid-connect-core-1_0.html#StandardClaims">OpenID Connect Core 1.0 Standard Claims</a></em>
+      <ul>
+        <li><strong>name:</strong> {{ fname }}, {{ lname }}</li>
+        <li><strong>given_name:</strong> {{ fname }}</li>
+        <li><strong>family_name:</strong> {{ lname }}</li>
+        <li><strong>preferred_username:</strong> {{ sub }}</li>
+        <li><strong>email:</strong> {{ email }}</li>
+      </ul>
+    </p>
+  </body>
+</html>
