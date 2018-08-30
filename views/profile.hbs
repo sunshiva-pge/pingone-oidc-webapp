@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>OpenID Connect Test</title>
+    <title>Demo - PingOne OIDC 1.0 Basic Profile</title>
   </head>
   <body>
     <h1>OpenID Connect Test</h1>
@@ -8,12 +8,13 @@
     <p>
       <em>Default values according to <a href="http://openid.net/specs/openid-connect-core-1_0.html#StandardClaims">OpenID Connect Core 1.0 Standard Claims</a></em>
       <ul>
-        <li><strong>name:</strong> {{ fname }}, {{ lname }}</li>
-        <li><strong>given_name:</strong> {{ fname }}</li>
-        <li><strong>family_name:</strong> {{ lname }}</li>
-        <li><strong>preferred_username:</strong> {{ sub }}</li>
-        <li><strong>email:</strong> {{ email }}</li>
-      </ul>
+        <li><strong>name:</strong> {{ lname }}, {{ fname }}</li>
+        <li><strong>givenName:</strong> {{ fname }}</li>
+        <li><strong>sn:</strong> {{ lname }}</li>
+        <li><strong>sAMAccountName:</strong> {{ sub }}</li>
+        <li><strong>mail:</strong> {{ email }}</li>
+        <li><strong>memberOf:</strong> {{ roles }}</li>
+      </ul>      
     </p>
   </body>
 </html>

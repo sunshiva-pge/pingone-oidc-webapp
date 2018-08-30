@@ -1,0 +1,10 @@
+# Node
+node_modules/*
+private-key.pem
+public-cert.pem
+.env
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
